@@ -21,6 +21,22 @@ class TaskList extends React.Component {
         <button className='ui primary button basic'>
           Submit
         </button>
+        <hr />
+        <div class="ui cards">
+          <div class="card">
+            <div class="content">
+              <div class="meta">
+                New Member
+              </div>
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <div class="ui basic green button">Done</div>
+                  <div class="ui basic red button">Delete</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     )
