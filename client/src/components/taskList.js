@@ -1,8 +1,19 @@
 import React from 'react'
+import axios from 'axios'
 
 class TaskList extends React.Component {
   state = {
     task: ""
+  }
+
+  onDeleteClick = () => {
+    console.log (' Inside Delete')
+  }
+
+  onSubmitClick = () => {
+    axios.post('http://localhost:4000/addTask', {
+      task: this.state.task
+    })
   }
 
   render() {
@@ -22,16 +33,16 @@ class TaskList extends React.Component {
           Submit
         </button>
         <hr />
-        <div class="ui cards">
-          <div class="card">
-            <div class="content">
-              <div class="meta">
+        <div className="ui cards">
+          <div className="card">
+            <div className="content">
+              <div className="meta">
                 New Member
               </div>
-              <div class="extra content">
-                <div class="ui two buttons">
-                  <div class="ui basic green button">Done</div>
-                  <div class="ui basic red button">Delete</div>
+              <div className="extra content">
+                <div className="ui two buttons">
+                  <div className="ui basic green button">Done</div>
+                  <div className="ui basic red button">Delete</div>
                 </div>
               </div>
             </div>

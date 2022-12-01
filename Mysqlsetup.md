@@ -14,4 +14,4 @@
 - Put these values 
 ![image](https://user-images.githubusercontent.com/78967360/204954411-19d02f69-6ca9-47df-954f-03f8ac01eba3.png)
 
--Click apply
+- Click apply
